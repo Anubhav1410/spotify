@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.png">
+    <title>Spotify-Web Player: Music for everyonet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="sidenav1">
+                <div class="sidenav11">
+                    <i class="fa-solid fa-house" style="color: #ffffffad;"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="sidenav12">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffffad;"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="sidenav2">
+                <div class="library">
+                    <div>
+                        <img src="assets/library_icon.png" class="libimg">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="lib2">
+                        <i class="fa-solid fa-plus" style="color: #ffffffad"></i>
+                        <i class="fa-solid fa-arrow-right" style="color: #ffffffad"></i>
+                    </div>
+                </div>
+                <div class="sidenavcard1">
+                    <div class="text1">Create your first playlist</div>
+                    <div class="text2">It's easy, we'll help you</div>
+                    <button>Create playlist</button>
+                </div>
+                <div class="sidenavcard1">
+                    <div class="text1">Let's find some podcasts to follow</div>
+                    <div class="text2">We'll keep you upload on new episodes</div>
+                    <button>Browse podcasts</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="header1">
+                <div class="headarr">
+                    <div>
+                        <img src="assets/backward_icon.png" class="arr1">
+                    </div>
+                    <div>
+                        <img src="assets/forward_icon.png" class="arr2">
+                    </div>
+                </div>
+                <div class="headarr2">
+                    <button>Explore Premium</button>
+                    <div class="unique"><i class="fa-regular fa-circle-down"></i>Install App</div>
+                    <div class="notification">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <div class="id">
+                        <div>l</div>
+                    </div>
+                </div>
+            </div>
+            <div class="header2">
+                <h2>Recently Played</h2>
+                <div class="header2card">
+                    <img src="assets/card1img.jpeg">
+                    <h3>Top 50-Global</h3>
+                    <div class="text2">Your daily updates of the most played tracks</div>
+                </div>
+                <h2>Trending now near you</h2>
+                <div class="recently">
+                    <div class="header2card">
+                        <img src="assets/card2img.jpeg">
+                        <h3>Top 50-Global</h3>
+                        <div class="text2">Your daily updates of the most played tracks</div>
+                    </div>
+                    <div class="header2card">
+                        <img src="assets/card3img.jpeg">
+                        <h3>Top 50-Global</h3>
+                        <div class="text2">Your daily updates of the most played tracks</div>
+                    </div>
+                    <div class="header2card">
+                        <img src="assets/card4img.jpeg">
+                        <h3>Top 50-Global</h3>
+                        <div class="text2">Your daily updates of the most played tracks</div>
+                    </div>
+                    <div class="header2card">
+                        <img src="assets/card5img.jpeg">
+                        <h3>Top 50-Global</h3>
+                        <div class="text2">Your daily updates of the most played tracks</div>
+                    </div>
+                    <div class="header2card">
+                        <img src="assets/card6img.jpeg">
+                        <h3>Top 50-Global</h3>
+                        <div class="text2">Your daily updates of the most played tracks</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="playerleft">
+                <img src="assets/album_picture.jpeg">
+                <div>
+                    <a href="#" style="color: white; font-size: 16px; font-weight: 600;">Prem Ki Naiyya</a>
+                    <a href="#" style="font-size: 13px;">Neeraj Shridhar, Suzanne D'Mello, Pritam</a>
+                </div>
+                <i class="fa-solid fa-circle-check" style="color: #1ed760;"></i>
+            </div>
+            <div class="playercenter">
+                <div class="control1">
+                    <img src="assets/player_icon1.png">
+                    <img src="assets/player_icon2.png">
+                    <img id="playerbutton" src="assets/player_icon3.png">
+                    <img src="assets/player_icon4.png">
+                    <img src="assets/player_icon5.png">
+                </div>
+                <div class="control2">
+                    <span class="text2" style="margin: 0px;">1:55</span>
+                    <input type="range" style="width : 30rem; height: 5px; margin: 0px 9px;">
+                    <span class="text2" style="margin: 0px;">4:11</span>
+                </div>
+            </div>
+            <div class="playerright">
+                <div>
+                    <img src="assets/controls_icon1.png" style="width: 30px; height: 42px;">
+                    <img src="assets/controld_icon2.png" style="width: 35px; height: 45px;">
+                    <img src="assets/controls_icon3.png" style="width: 27px; height: 25px;">
+                    <img src="assets/controls_icon4.png" style="width: 22px; height: 18px;">
+                </div>
+                <div>
+                    <img src="assets/controls_icon5.png" style="width: 36px; height: 48px;">
+                    <input type="range" style="width : 130px; height: 5px;">
+                    <img src="assets/album_icon2.png" style="width: 36px; height: 48px; margin-right: 9px;">
+                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
