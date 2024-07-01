@@ -247,7 +247,7 @@ h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-header2card:hover {
+.header2card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(255, 223, 0, 0.6);
     background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
@@ -336,8 +336,8 @@ header2card:hover {
 }
 
 /* Hover effects for golden magic colors */
-header2card:hover, .sidenav1:hover, .sidenavcard1:hover, .library:hover, .unique:hover {
+.header2card:hover, .sidenavcard1:hover, .unique:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(255, 223, 0, 0.6);
-    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    box-shadow: 0 10px 20px rgba(111, 26, 221, 0.6);
+    background: linear-gradient(135deg, #480565 0%, #FFA500 100%);
 }
