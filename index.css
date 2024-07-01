@@ -337,7 +337,7 @@ h2 {
 
 /* Hover effects for golden magic colors */
 .header2card:hover, .sidenavcard1:hover, .unique:hover {
-    transform: translateX(-20px);
+    transform: translateZ(-20px);
     box-shadow: 0 10px 20px rgba(111, 26, 221, 0.6);
     background: linear-gradient(135deg, #480565 0%, #FFA500 100%);
 }
