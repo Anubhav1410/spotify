@@ -340,6 +340,5 @@ h2 {
     transform: translateZ(-10px);
     box-shadow: 0 10px 20px rgba(111, 26, 221, 0.6);
     background: linear-gradient(135deg, #480565 0%, #FFA500 100%);
-    z-index: -10;
     transform:scale(1.1,1.1); 
 }
