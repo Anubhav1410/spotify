@@ -251,7 +251,7 @@ h2 {
     border-radius: 0.6rem;
     margin-right: 1.25rem;
     margin-bottom: 0.9375rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.7s ease, box-shadow 0.5s ease, background-color 0.5s ease;
 }
 
 .header2card:hover {
