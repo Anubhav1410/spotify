@@ -4,6 +4,10 @@ body {
     background-color: black;
     color: white;
     overflow: hidden;
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/06/14/12/bokeh-lights-2592859_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .main {
@@ -340,5 +344,18 @@ h2 {
     transform: translateZ(-10px);
     box-shadow: 0 10px 20px rgba(111, 26, 221, 0.6);
     background: linear-gradient(135deg, #480565 0%, #FFA500 100%);
-    transform:scale(1.1,1.1); 
+    z-index: -10;
+}
+
+/* Step 1: Notification and install app golden color */
+.notification, .unique {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+}
+
+/* Step 2: Background image */
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/06/14/12/bokeh-lights-2592859_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
