@@ -1,13 +1,8 @@
 body {
     font-family: "Montserrat", sans-serif;
     margin: 0px;
-    background-color: black;
     color: white;
     overflow: hidden;
-    background-image: url('https://cdn.pixabay.com/photo/2017/08/06/14/12/bokeh-lights-2592859_1280.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .main {
@@ -164,6 +159,10 @@ a {
 }
 
 .headarr2 {
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/06/14/12/bokeh-lights-2592859_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     align-items: end;
     justify-content: space-between;
