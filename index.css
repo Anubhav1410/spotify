@@ -211,6 +211,11 @@ h2 {
     margin-right: 20px;
     margin-bottom: 15px;
 }
+
+header2card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
 .header2 img {
     width: 198px;
     border-radius: 0.6rem;
