@@ -1,3 +1,4 @@
+/* Define base styles */
 body {
     font-family: "Montserrat", sans-serif;
     margin: 0px;
@@ -158,11 +159,12 @@ a {
     margin-left: 8px;
 }
 
-.header2{
-background-image: url('https://cdn.pixabay.com/photo/2017/08/06/14/12/bokeh-lights-2592859_1280.jpg');
+.header2 {
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/06/14/12/bokeh-lights-2592859_1280.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    padding: 0 1.75rem;
 }
 
 .headarr2 {
@@ -240,6 +242,9 @@ background-image: url('https://cdn.pixabay.com/photo/2017/08/06/14/12/bokeh-ligh
 h2 {
     font-weight: 600;
     display: block;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    padding: 10px;
+    border-radius: 0.6rem;
 }
 
 .header2card {
@@ -338,10 +343,6 @@ h2 {
     padding: 0px 4px;
 }
 
-.header2 {
-    padding: 0 1.75rem;
-}
-
 /* Hover effects for golden magic colors */
 .header2card:hover, .sidenavcard1:hover, .unique:hover {
     transform: translateZ(-10px);
@@ -354,10 +355,7 @@ h2 {
     background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
 }
 
-/* Step 2: Background image */
-body {
-    background-image: url('https://cdn.pixabay.com/photo/2017/08/06/14/12/bokeh-lights-2592859_1280.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+/* Headers background color matching */
+.header1, .header2 {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
 }
