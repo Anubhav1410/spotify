@@ -180,8 +180,9 @@ a {
     font-weight: 650;
     border-radius: 1.7rem;
     border: none;
-    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    background: linear-gradient(110deg, #ff0000 0%, #FFA500 100%);
     color: white;
+    cursor: none;
 }
 
 .unique {
@@ -353,10 +354,6 @@ h2 {
     background: linear-gradient(135deg, #480565 0%, #FFA500 100%);
 }
 
-/* Step 1: Notification and install app golden color */
-.notification, .unique {
-    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-}
 
 /* Step 2: Background image */
 body {
@@ -443,6 +440,7 @@ body {
     margin-top: -5px;
     position: relative;
 }
+
 .circle {
     height: 24px;
     width: 24px;
@@ -454,3 +452,71 @@ body {
     pointer-events: none;
     z-index: 99999999; /* so that it stays on top of all other elements */
   }
+  #loader{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: all ease 0.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader h1{
+    font-size: 3vw;
+    color: transparent;
+    background: linear-gradient(135deg, #FFA500 0%, #480565 100%);
+    -webkit-background-clip: text;
+    position: absolute;
+    opacity: 0;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+#loader h1:nth-child(2){
+    animation-delay: 2s;
+}
+#loader h1:nth-child(3){
+    animation-delay: 3s;
+}
+#loader h1:nth-child(4){
+    animation-delay: 4s;
+}
+
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media (max-width:600px) {
+    #loader h1{
+        font-size: 9vw;
+      
+    }
+}
+.spotifylogomain {
+    width: 180px;
+    height: 180px;
+    margin-right: 20px;
+}
+.logomain {
+    display: flex;
+    align-items: center;
+}
+.sound {
+    accent-color: #1bd760;
+}

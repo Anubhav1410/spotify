@@ -57,21 +57,29 @@ circles.forEach(function (circle, index) {
   circle.y = 0;
   circle.style.backgroundColor = colors[index % colors.length];
 });
+const showCircles = () => {
+    circles.forEach(circle => circle.style.display = 'block');
+  };
+  
+  const hideCircles = () => {
+    circles.forEach(circle => circle.style.display = 'none');
+  };
 
 window.addEventListener("mousemove", function(e){
   coords.x = e.clientX;
   coords.y = e.clientY;
+  showCircles();
   
 });
-
+window.addEventListener("mouseout", hideCircles);
 function animateCircles() {
   
   let x = coords.x;
   let y = coords.y;
   
   circles.forEach(function (circle, index) {
-    circle.style.left = x - 12 + "px";
-    circle.style.top = y - 12 + "px";
+    circle.style.left = x - 20 + "px";
+    circle.style.top = y - 20 + "px";
     
     circle.style.scale = (circles.length - index) / circles.length;
     
@@ -85,5 +93,11 @@ function animateCircles() {
  
   requestAnimationFrame(animateCircles);
 }
-
+function loaderAnimation() {
+    var loader = document.querySelector("#loader")
+    setTimeout(function () {
+        loader.style.top = "-100%"
+    }, 5000)
+}
+loaderAnimation()
 animateCircles();
