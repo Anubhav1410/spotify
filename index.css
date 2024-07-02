@@ -179,6 +179,8 @@ a {
     font-weight: 650;
     border-radius: 1.7rem;
     border: none;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: white;
 }
 
 .unique {
@@ -216,7 +218,7 @@ a {
 }
 
 .id {
-    background-color: #07070798;
+    background-color: #212121;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -226,7 +228,7 @@ a {
 }
 
 .id div {
-    background-color: #b49bc8;
+    background-color: #FFD700;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -340,10 +342,11 @@ h2 {
 
 .header2 {
     padding: 0 1.75rem;
+    padding-right: 0;
 }
 
 /* Hover effects for golden magic colors */
-.header2card:hover, .sidenavcard1:hover, .unique:hover {
+.header2card:hover, .sidenavcard1:hover, .unique:hover, .headarr2 button:hover, .notification:hover, .id:hover{
     transform: translateZ(-10px);
     box-shadow: 0 10px 20px rgba(111, 26, 221, 0.6);
     background: linear-gradient(135deg, #480565 0%, #FFA500 100%);
