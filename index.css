@@ -299,21 +299,22 @@ h2 {
 
 .playercenter {
     width: 40rem;
+    max-width: 100%;
     padding-top: 15px;
+    overflow: hidden; 
 }
 
 .control1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 60px;
 }
-
 .control2 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .playerright {
     width: 25rem;
     display: flex;
@@ -327,9 +328,14 @@ h2 {
     margin: 20px;
 }
 
-#playerbutton {
+img[src="assets/player_icon3.png"] {
     width: 40px;
     height: 40px;
+    margin: 10px;
+}
+img[src="assets/pause.png"] {
+    width: 50px;
+    height: 50px;
     margin: 10px;
 }
 
@@ -347,7 +353,6 @@ h2 {
     padding-right: 0;
 }
 
-/* Hover effects for golden magic colors */
 .header2card:hover, .sidenavcard1:hover, .unique:hover, .headarr2 button:hover, .notification:hover, .id:hover{
     transform: translateZ(-10px);
     box-shadow: 0 10px 20px rgba(111, 26, 221, 0.6);
@@ -355,14 +360,12 @@ h2 {
 }
 
 
-/* Step 2: Background image */
 body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: black;
 }
-/* Style for the range input */
 .control2 input[type="range"] {
     -webkit-appearance: none;
     width: 100%;
@@ -450,7 +453,7 @@ body {
     top: 0;
     left: 0;
     pointer-events: none;
-    z-index: 99999999; /* so that it stays on top of all other elements */
+    z-index: 99999999; 
   }
   #loader{
     height: 100%;

@@ -1,29 +1,51 @@
-// JavaScript to update the range input value smoothly over time
+
 
 const progressBar = document.getElementById('progress-bar');
 const currentTimeElement = document.querySelector('.current-time');
 const totalTimeElement = document.querySelector('.total-time');
+let playButton = document.querySelector("#playerbutton");
 
-let currentTime = 0; // in seconds (1:55)
+let currentTime = 0; // in seconds (0;00)
 const totalTime = 251; // in seconds (4:11)
-
+let progressInterval;
+let isPlaying = false;
 const updateProgressBar = () => {
-    if (currentTime < totalTime) {
-        currentTime += 0.1; // Increment by a smaller value for smooth transition
-        const progress = currentTime;
-        progressBar.value = progress;
-        progressBar.style.setProperty('--progress', `${(progress/totalTime)*100}%`);
+  if (currentTime < totalTime) {
+      currentTime += 0.1;
+      const progress = currentTime;
+      progressBar.value = progress;
+      progressBar.style.setProperty('--progress', `${(progress / totalTime) * 100}%`);
 
-        // Update the current time display
-        const minutes = Math.floor(currentTime / 60);
-        const seconds = Math.floor(currentTime % 60);
-        currentTimeElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-    } else {
-        clearInterval(progressInterval);
-    }
+      const minutes = Math.floor(currentTime / 60);
+      const seconds = Math.floor(currentTime % 60);
+      currentTimeElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+  } else {
+      clearInterval(progressInterval);
+      isPlaying = false;
+  }
 };
 
-const progressInterval = setInterval(updateProgressBar, 100); // Update every 100 milliseconds for smoother progress
+const startProgressBar = () => {
+  if (!isPlaying) {
+      progressInterval = setInterval(updateProgressBar, 100);
+      isPlaying = true;
+  }
+};
+
+const stopProgressBar = () => {
+  clearInterval(progressInterval);
+  isPlaying = false;
+};
+
+playButton.addEventListener('click', () => {
+  if (isPlaying) {
+      playButton.src = "assets/player_icon3.png"
+      stopProgressBar();
+  } else {
+      playButton.src = "assets/pause.png"
+      startProgressBar();
+  }
+});
 const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circle");
 
@@ -104,3 +126,4 @@ function loaderAnimation() {
 }
 loaderAnimation()
 animateCircles();
+startProgressBar();
