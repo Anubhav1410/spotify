@@ -1,295 +1,522 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1e1e1e;
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
     color: white;
+    overflow: hidden;
+    cursor: none;
 }
 
 .main {
     display: flex;
-    flex-direction: row;
+    height: 100vh;
+    padding: 9px;
 }
 
 .sidebar {
-    width: 300px;
-    background-color: #040404;
-    padding-top: 60px;
-    min-height: 100vh;
+    background-color: black;
+    width: 22%;
+    margin-right: 9px;
 }
 
 .sidenav1 {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    background-color: #121212;
+    border-radius: 0.6rem;
+    height: 130px;
+    margin-bottom: 9px;
+    padding: 0rem 0.25rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.sidenav1 a {
-    color: #ffffffad;
+.sidenav1 div {
+    margin: 0.9375rem;
+    padding: 0.25rem 0.75rem;
+}
+
+a {
     text-decoration: none;
-    margin-left: 20px;
-    margin-top: 10px;
-    font-size: 22px;
-    font-weight: 100;
+    color: #ffffff9d;
+    font-weight: 700;
+    font-size: 1.125rem;
 }
 
-.sidenav1 a:hover {
-    color: white;
-    cursor: pointer;
+.sidenav1 i {
+    font-size: 1.5625rem;
+    margin-right: 0.9375rem;
 }
 
-.sidenav11, .sidenav12 {
+.main-content {
+    background-color: #1a1919;
+    flex: 1;
+    border-radius: 0.6rem;
+    overflow: auto;
+}
+
+.music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    height: 6.875rem;
+    width: 100%;
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.sidenav11 i, .sidenav12 i {
-    margin-right: 10px;
+    justify-content: space-between;
 }
 
 .sidenav2 {
-    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5625rem 0.75rem;
+    background-color: #121212;
+    border-radius: 0.7rem;
+    height: 100%;
+}
+
+.libimg {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-left: 1.4375rem;
+    margin-right: 0.9375rem;
+}
+
+.library div {
+    margin-top: 0.75rem;
 }
 
 .library {
     display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    cursor: pointer;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.library div {
-    display: flex;
-    align-items: center;
-}
-
-.library a {
-    color: #ffffffad;
-    text-decoration: none;
-    margin-left: 10px;
-    font-size: 18px;
-}
-
-.library a:hover {
-    color: white;
-}
-
-.lib2 {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-}
-
-.lib2 i {
-    margin-left: 10px;
+.library i {
+    font-size: 1.5625rem;
+    margin-top: 0.0625rem;
+    margin-right: 1.25rem;
 }
 
 .sidenavcard1 {
-    background-color: #1e1e1e;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    background-color: #212121;
+    border-radius: 0.6rem;
+    padding: 1.25rem 1.25rem;
+    padding-bottom: 0.9375rem;
+    margin-top: 1.875rem;
+    height: 141.74px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .text1 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
+    font-weight: 650;
+    font-size: 1rem;
+    margin-bottom: 0.6875rem;
 }
 
 .text2 {
-    font-size: 16px;
-    color: #ffffffad;
-    margin-bottom: 20px;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
 }
 
-.sidenavcard1 button {
-    background-color: #1ed760;
-    color: white;
+.sidenav2 button {
+    width: 9.375rem;
+    height: 37px;
+    font-size: 1rem;
+    font-weight: 549;
+    border-radius: 1.7rem;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.sidenavcard1 button:hover {
-    background-color: #1db954;
-}
-
-.main-content {
-    flex: 1;
-    padding: 30px;
+.headarr div {
+    background-color: #07070752;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 40px;
+    display: inline-block;
+    margin-right: 0.625rem;
 }
 
 .header1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    padding: 0 1.75rem;
+    position: sticky;
+    top: 0;
+    background-color: #0f0f0fec;
+    height: 80px;
+    z-index: 10;
 }
 
 .headarr {
     display: flex;
 }
 
+.arr1 {
+    margin-top: 0.4375rem;
+    margin-left: 0.3125rem;
+}
+
+.arr2 {
+    margin-top: 0.4375rem;
+    margin-left: 0.5rem;
+}
+
+.header2{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .headarr2 {
     display: flex;
-    align-items: center;
+    align-items: end;
+    justify-content: space-between;
+    width: 27.1875rem;
+}
+
+.headarr2 button {
+    width: 11.875rem;
+    height: 45px;
+    font-size: 1rem;
+    font-weight: 650;
+    border-radius: 1.7rem;
+    border: none;
+    background: linear-gradient(110deg, #ff0000 0%, #FFA500 100%);
+    color: white;
+    cursor: none;
 }
 
 .unique {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
     color: white;
-    font-size: 20px;
+    background-color: #07070798;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 550;
+    border-radius: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.unique i {
+    margin-right: 9px;
+    font-size: 19px;
 }
 
 .notification {
-    margin-left: 20px;
-    cursor: pointer;
+    background-color: #07070752;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.notification i {
+    font-size: 23px;
+    margin-left: 10px;
+    margin-top: 8px;
 }
 
 .id {
-    background-color: #ffffff17;
-    width: 30px;
-    height: 30px;
+    background-color: #212121;
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
-    margin-left: 20px;
-    cursor: pointer;
 }
 
-.header2 {
-    color: white;
+.id div {
+    background-color: #FFD700;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #070707;
+    font-weight: 800;
 }
 
-.header2 h2 {
-    font-size: 26px;
-    margin-bottom: 20px;
+h2 {
+    font-weight: 600;
+    display: block;
 }
 
 .header2card {
-    background-color: #2b2b2b;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    margin-bottom: 20px;
-    padding: 20px;
+    width: 12.3125rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.9375rem;
+    background-color: #212121;
+    border-radius: 0.6rem;
+    margin-right: 1.25rem;
+    margin-bottom: 0.9375rem;
+    transition: transform 0.7s ease, box-shadow 0.5s ease, background-color 0.5s ease;
+}
+
+.header2card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 223, 0, 0.6);
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+}
+
+.header2 img {
+    width: 100%;
+    border-radius: 0.6rem;
+}
+
+.recently {
+    display: flex;
+    flex-wrap: wrap;
+}
+.music-player .playerleft i {
+    font-size: 21px;
+}
+
+.playerleft img {
+    width: 58px;
+    height: 58px;
+    border-radius: 0.4rem;
+}
+
+.playerleft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 25rem;
+    padding-left: 10px;
+}
+
+.playerleft div {
     display: flex;
     flex-direction: column;
 }
 
-.header2card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
+.playercenter {
+    width: 40rem;
+    padding-top: 15px;
 }
 
-.header2card h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.header2card .text2 {
-    color: #ffffffad;
-    font-size: 14px;
-}
-
-.container {
+.control1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
 }
 
-.cube-frame {
-    position: relative;
-    margin: 50px; /* Adjust spacing between cubes */
+.control2 {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.scene {
-    width: 200px; /* Adjust the size of each cube */
-    height: 200px; /* Adjust the size of each cube */
-    position: relative;
-    transform-style: preserve-3d;
+.playerright {
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    padding-right: 2.5rem;
 }
 
-.cube {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateY(0deg);  /* Initial position of the cube */
-    animation: rotateCube 12s infinite linear;
+.control1 img {
+    width: 20px;
+    height: 20px;
+    margin: 20px;
 }
 
-.face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+#playerbutton {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.playerright div {
+    display: flex;
+    align-items: center;
+}
+
+.playerright div img {
+    padding: 0px 4px;
+}
+
+.header2 {
+    padding: 0 1.75rem;
+    padding-right: 0;
+}
+
+/* Hover effects for golden magic colors */
+.header2card:hover, .sidenavcard1:hover, .unique:hover, .headarr2 button:hover, .notification:hover, .id:hover{
+    transform: translateZ(-10px);
+    box-shadow: 0 10px 20px rgba(111, 26, 221, 0.6);
+    background: linear-gradient(135deg, #480565 0%, #FFA500 100%);
+}
+
+
+/* Step 2: Background image */
+body {
     background-size: cover;
-    background-position: center;
-    box-shadow: 0 10px 20px rgba(138, 43, 226, 0.5), 0 -10px 20px rgba(255, 255, 0, 0.5);
-    border-radius: 10px;
-    cursor: pointer; /* Change cursor to pointer */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+}
+/* Style for the range input */
+.control2 input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background: white;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    position: relative;
 }
 
-.front { transform: translateZ(100px); }
-.back { transform: rotateY(180deg) translateZ(100px); }
-.right { transform: rotateY(90deg) translateZ(100px); }
-.left { transform: rotateY(-90deg) translateZ(100px); }
-
-/* Assign background images to each face */
-#cube1 .photo1 { background-image: url('m7.jpeg'); }
-#cube1 .photo2 { background-image: url('m3.jpeg'); }
-#cube1 .photo3 { background-image: url('m6.jpeg'); }
-#cube1 .photo4 { background-image: url('m5.jpeg'); }
-
-#cube2 .photo5 { background-image: url('k5.jpeg'); }
-#cube2 .photo6 { background-image: url('k3.jpeg'); }
-#cube2 .photo7 { background-image: url('k2.jpeg'); }
-#cube2 .photo8 { background-image: url('k1.jpeg'); }
-
-#cube3 .photo9 { background-image: url('p5.jpeg'); }
-#cube3 .photo10 { background-image: url('p3.jpeg'); }
-#cube3 .photo11 { background-image: url('p1.jpeg'); }
-#cube3 .photo12 { background-image: url('p4.jpeg'); }
-
-@keyframes rotateCube {
-    0% {
-        transform: rotateX(0deg) rotateY(0deg);
-    }
-    25% {
-        transform: rotateX(0deg) rotateY(90deg);
-    }
-    50% {
-        transform: rotateX(0deg) rotateY(180deg);
-    }
-    75% {
-        transform: rotateX(0deg) rotateY(270deg);
-    }
-    100% {
-        transform: rotateX(0deg) rotateY(360deg);
-    }
+.control2 input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: linear-gradient(to right, #d71b73 0%, #d7b81b var(--progress), white var(--progress), white 100%);
+    border-radius: 1px;
 }
 
-.cube-text {
+.control2 input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #00ff3c;
+    cursor: pointer;
+    margin-top: -5px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.control2 input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: linear-gradient(to right, #1bd760 0%, #1bd760 var(--progress), #ddd var(--progress), #ddd 100%);
+    border-radius: 1px;
+}
+
+.control2 input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #1bd760;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -5px;
+}
+
+.control2 input[type="range"]::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+.control2 input[type="range"]::-ms-fill-lower {
+    background: #1bd760;
+    border-radius: 1px;
+}
+
+.control2 input[type="range"]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 1px;
+}
+
+.control2 input[type="range"]::-ms-thumb {
+    width: 15px;
+    height: 15px;
+    background: #1bd760;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: -5px;
+    position: relative;
+}
+
+.circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: black;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999; /* so that it stays on top of all other elements */
+  }
+  #loader{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: all ease 0.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader h1{
+    font-size: 3vw;
+    color: transparent;
+    background: linear-gradient(135deg, #FFA500 0%, #480565 100%);
+    -webkit-background-clip: text;
     position: absolute;
-    top: 220px; /* Position below the cube */
-    text-align: center;
-    width: 200px; /* Match the cube's width */
-    background: linear-gradient(135deg, #2f00ff 0%, #ff001e 100%);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 15px;
+    opacity: 0;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+#loader h1:nth-child(2){
+    animation-delay: 2s;
+}
+#loader h1:nth-child(3){
+    animation-delay: 3s;
+}
+#loader h1:nth-child(4){
+    animation-delay: 4s;
+}
+
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media (max-width:600px) {
+    #loader h1{
+        font-size: 9vw;
+      
+    }
+}
+.spotifylogomain {
+    width: 180px;
+    height: 180px;
+    margin-right: 20px;
+}
+.logomain {
+    display: flex;
+    align-items: center;
+}
+.sound {
+    accent-color: #1bd760;
 }
