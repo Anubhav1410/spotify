@@ -570,20 +570,20 @@ body {
 .left { transform: rotateY(-90deg) translateZ(100px); }
 
 /* Assign background images to each face */
-#cube1 .photo1 { background-image: url('m7.jpeg'); }
-#cube1 .photo2 { background-image: url('m3.jpeg'); }
-#cube1 .photo3 { background-image: url('m6.jpeg'); }
+#cube1 .photo1 { background-image: url('assets/m7.jpeg'); }
+#cube1 .photo2 { background-image: url('assets/m3.jpeg'); }
+#cube1 .photo3 { background-image: url('assets/m6.jpeg'); }
 #cube1 .photo4 { background-image: url('m5.jpeg'); }
 
-#cube2 .photo5 { background-image: url('k5.jpeg'); }
-#cube2 .photo6 { background-image: url('k3.jpeg'); }
-#cube2 .photo7 { background-image: url('k2.jpeg'); }
+#cube2 .photo5 { background-image: url('assets/k5.jpeg'); }
+#cube2 .photo6 { background-image: url('assets/k3.jpeg'); }
+#cube2 .photo7 { background-image: url('assets/k2.jpeg'); }
 #cube2 .photo8 { background-image: url('k1.jpeg'); }
 
-#cube3 .photo9 { background-image: url('p5.jpeg'); }
-#cube3 .photo10 { background-image: url('p3.jpeg'); }
-#cube3 .photo11 { background-image: url('p1.jpeg'); }
-#cube3 .photo12 { background-image: url('p4.jpeg'); }
+#cube3 .photo9 { background-image: url('assets/p5.jpeg'); }
+#cube3 .photo10 { background-image: url('assets/p3.jpeg'); }
+#cube3 .photo11 { background-image: url('assets/p1.jpeg'); }
+#cube3 .photo12 { background-image: url('assets/p4.jpeg'); }
 
 @keyframes rotateCube {
     0% {
