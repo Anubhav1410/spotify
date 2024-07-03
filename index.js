@@ -97,7 +97,10 @@ function loaderAnimation() {
     var loader = document.querySelector("#loader")
     setTimeout(function () {
         loader.style.top = "-100%"
-    }, 5000)
+    }, 5000);
+    window.addEventListener("click", function () {
+      loader.style.top = "-100%";
+  });
 }
 loaderAnimation()
 animateCircles();
