@@ -589,4 +589,8 @@ body {
         width: 15rem;
     }
 }
-
+.recently::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    pointer-events: none;
+}
