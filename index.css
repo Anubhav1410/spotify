@@ -256,6 +256,7 @@ h2 {
 .header2card {
     width: 11vw;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     padding: 0.9375rem;
     background-color: #212121;
@@ -560,11 +561,32 @@ body {
     }
 }
 @media (max-width:744px) {
-    .unique, .headarr2 button, .repeat, .shuffle {
+    .unique, .headarr2 button, .playerright, .shuffle, .repeat{
         display: none;
     }
     .headarr2 {
         justify-content: end;
     }
-
+    .playercenter {
+        padding-right: 40px;
+    }
 }
+@media (max-width:1350px) {
+    .lib2 {
+        display: none;
+    }
+}
+.line1 {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+@media (max-width: 400px) {
+    .line1 {
+        display: none;
+    }
+    .playerleft {
+        width: 15rem;
+    }
+}
+
