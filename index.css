@@ -60,7 +60,7 @@ a {
     background-color: black;
     position: fixed;
     bottom: 0px;
-    height: 6.875rem;
+    height: 5.5rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -316,8 +316,6 @@ h2 {
 .playercenter {
     width: 40rem;
     max-width: 100%;
-    padding-top: 15px;
-    overflow: hidden; 
 }
 
 .control1 {
