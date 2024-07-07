@@ -1,3 +1,6 @@
+html, body {
+    touch-action: manipulation;
+}
 body {
     font-family: "Montserrat", sans-serif;
     margin: 0px;
@@ -9,23 +12,23 @@ body {
 .main {
     display: flex;
     height: 100vh;
-    padding: 9px;
+    padding: 0.5625vw;
 }
 
 .sidebar {
     background-color: black;
     width: 22%;
-    margin-right: 9px;
+    margin-right: 0.5625vw;
 }
 
 .sidenav1 {
     display: flex;
     flex-direction: column;
     background-color: #121212;
-    border-radius: 0.6rem;
+    border-radius: 0.6vw;
     height: 130px;
     margin-bottom: 9px;
-    padding: 0rem 0.25rem;
+    padding: 0vw 0.25vw;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
@@ -66,9 +69,9 @@ a {
 .sidenav2 {
     display: flex;
     flex-direction: column;
-    padding: 0.5625rem 0.75rem;
+    padding: 0.5625vw 0.75vw;
     background-color: #121212;
-    border-radius: 0.7rem;
+    border-radius: 0.7vw;
     height: 100%;
 }
 
@@ -113,6 +116,7 @@ a {
 
 .text2 {
     font-weight: 400;
+    font-size: 0.9vw;
     margin-bottom: 1.25rem;
 }
 
@@ -247,7 +251,7 @@ h2 {
 }
 
 .header2card {
-    width: 12.3125rem;
+    width: 11vw;
     display: flex;
     flex-wrap: wrap;
     padding: 0.9375rem;
@@ -269,9 +273,16 @@ h2 {
     border-radius: 0.6rem;
 }
 
+.header2 h3 {
+    font-size: 1.1vw;
+}
+
 .recently {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    scrollbar-width: 0px;
+    scroll-behavior: smooth;
 }
 .music-player .playerleft i {
     font-size: 21px;
@@ -319,7 +330,7 @@ h2 {
     width: 25rem;
     display: flex;
     align-items: center;
-    padding-right: 2.5rem;
+    padding-right: 3.5rem;
 }
 
 .control1 img {
@@ -469,7 +480,7 @@ body {
 }
 
 #loader h1{
-    font-size: 3vw;
+    font-size: 3.5vw;
     color: transparent;
     background: linear-gradient(135deg, #FFA500 0%, #480565 100%);
     -webkit-background-clip: text;
@@ -505,35 +516,50 @@ body {
     }
 }
 #loader .logomain {
-    font-size: 100px;
+    font-size: 6.25vw;
     display: flex;
     align-items: center;
 }
-@media (max-width:600px) {
-    #loader h1{
-        font-size: 6vw;   
-    }
-    #loader .logomain {
-        font-size: 50px;
-    }
-    #loader .spotifylogomain {
-        width: 80px;
-        height: 80px;
-        margin-right: 20px;
-    }
-}
+
 .spotifylogomain {
-    width: 180px;
-    height: 180px;
+    width: 11.25vw;
+    height: 11.25vw;
     margin-right: 20px;
 }
 
 .sound {
     accent-color: #1bd760;
+    width: 10vw;
 }
 @media (max-width:1123px) {
-    .sidebar {
+    .sidebar, .line2, .fa-circle-check, .before {
+        display: none !important;
+    }
+    .circle {
+        display: none !important;
+    }
+    .header2card{
+        width: 13rem;
+    }
+    .text2 {
+        font-size: 1rem;    
+    }
+    .header2 h3 {
+        font-size: 1.2rem;
+    }
+    .playerleft {
+        justify-content: start;
+    }
+    .playerright {
+        padding: 20px;
+    }
+}
+@media (max-width:744px) {
+    .unique, .headarr2 button, .repeat, .shuffle {
         display: none;
     }
-    
+    .headarr2 {
+        justify-content: end;
+    }
+
 }
