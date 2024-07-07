@@ -316,6 +316,7 @@ h2 {
 .playercenter {
     width: 40rem;
     max-width: 100%;
+    overflow: hidden;
 }
 
 .control1 {
